@@ -2,3 +2,11 @@ body {
     background-image: linear-gradient(to top, white, gray);
     height: 100vh;
 }
+
+:root {
+    --color01: #5B8C5A;
+    --color02: #cecfb4;
+    --color03: #53687E;
+    --color04: #3A4454;
+    --color05: #B24C63;
+}
