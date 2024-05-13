@@ -1,6 +1,7 @@
 body {
     background-image: linear-gradient(to top, white, gray);
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -14,4 +15,15 @@ body {
 * {
     margin: 0px;
     padding: 0px;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+}
+
+#menu a {
+    margin: 5px;
+    text-decoration: none;
+    color: var(--color03);
 }
