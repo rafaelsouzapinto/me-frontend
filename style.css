@@ -19,11 +19,36 @@ body {
 
 header {
     background-color: white;
-    padding: 10px;
+    padding: 15px;
 }
 
 #menu a {
     margin: 5px;
     text-decoration: none;
     color: var(--color03);
+}
+
+#menu a:hover {
+    font-weight: bolder;
+    color: var(--color05);
+}
+
+#introducao {
+    display: flex;
+    width: 100%;
+    height: 45vh;
+    margin: 0px 0px 10px 0px;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #53687E, #537e6c);
+}
+
+#texto01 {
+    display: inline;
+    margin-right: 40px;
+    font-size: 1.5em;
+}
+
+#introducao img {
+    width: 400px;
 }
