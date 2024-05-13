@@ -10,3 +10,8 @@ body {
     --color04: #3A4454;
     --color05: #B24C63;
 }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
