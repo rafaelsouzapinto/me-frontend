@@ -80,8 +80,29 @@ header {
     height: 450px;
     display: inline-block;
     margin: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
 }
 
+#card01 h2, #card02 h2, #card03 h2 {
+    margin-top: 20px;
+    font-size: 2.0em;
+}
+
+#card01 h1, #card02 h1, #card03 h1 {
+    font-size: 2.5em;
+    margin: 10px;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+
+#card01 li, #card02 li, #card03 li {
+    text-align: left;
+    list-style-position: inside;
+    font-size: 1.5em;
+    margin: 10px;
+}
 
 #texto03 {
     text-align: right;
