@@ -1,12 +1,11 @@
 body {
-    background-image: linear-gradient(to top, white, gray);
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
     --color01: #5B8C5A;
-    --color02: #cecfb4;
+    --color02: #cfcfc9;
     --color03: #53687E;
     --color04: #3A4454;
     --color05: #B24C63;
@@ -16,22 +15,30 @@ body {
     margin: 0px;
     padding: 0px;
 }
+main {
+    background-color: var(--color02);
+}
+
 
 header {
     background-color: white;
     padding: 15px;
 }
-
+#menu {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
 #menu a {
     margin: 5px;
     text-decoration: none;
     color: var(--color03);
 }
-
 #menu a:hover {
     font-weight: bolder;
     color: var(--color05);
 }
+
 
 #introducao {
     display: flex;
@@ -40,34 +47,80 @@ header {
     margin: 0px 0px 10px 0px;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to right, #53687E, #537e6c);
 }
-
 #texto01 {
     display: inline;
     margin-right: 40px;
     font-size: 1.5em;
 }
-
 #introducao img {
     width: 400px;
 }
 
+
 #planos {
     display: flex;
-    width: 100%;
-    height: 52vh;
-    justify-content: center;
-}
-
-#texto02 {
-    display: inline-block;
-}
-
-#card01, #card02, #card03 {
-    background-color: #3A4454;
-    width: 300px;
+    width: 95%;
     height: 500px;
+    justify-content: center;
+    background-image: linear-gradient(to right, #53687E, #537e6c);
+    border-radius: 0px 0px 20px 0px;
+
+}
+#texto02 {
+    border-radius: 0px 20px 0px 0px;
+    padding-top: 20px;
+    text-indent: 150px;
+    background-image: linear-gradient(to right, #53687E, #537e6c);
+    width: 95%;
+}
+#card01, #card02, #card03 {
+    background-color:var(--color04);
+    width: 300px;
+    height: 450px;
     display: inline-block;
     margin: 20px;
+}
+
+
+#texto03 {
+    text-align: right;
+    width: 900px;
+    margin: auto;
+    padding: 20px 20px 0px 20px;
+}
+#quem-somos {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#kevo, #rafa, #gui {
+    background-color:var(--color05);
+    width: 300px;
+    height: 350px;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+
+#projeto {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 1000px;
+    margin: auto;
+}
+#imagem-projeto {
+   width: 400px;
+   height: 300px;
+   background-color: var(--color01);
+   margin: 20px;
+   border-radius: 20px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    height: 500px;
 }
