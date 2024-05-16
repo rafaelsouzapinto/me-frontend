@@ -15,14 +15,16 @@ body {
     margin: 0px;
     padding: 0px;
 }
-main {
-    background-color: var(--color02);
-}
 
 header {
     background-color: white;
     padding: 15px;
 }
+
+main {
+    background-color: var(--color02);
+}
+
 #menu {
     max-width: 1000px;
     margin: auto;
@@ -45,6 +47,8 @@ header {
     margin: 0px 0px 10px 0px;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(to bottom, #ffffe0, #ecece6);
+
 }
 #texto01 {
     display: inline;
@@ -71,9 +75,10 @@ header {
     text-indent: 150px;
     background-image: linear-gradient(to right, #53687E, #537e6c);
     width: 95%;
+    font-size: 1.2em;
 }
 #card01, #card02, #card03 {
-    background-color:var(--color04);
+    background: linear-gradient(to bottom, #425569, #3A4454);
     width: 300px;
     height: 450px;
     display: inline-block;
@@ -81,7 +86,7 @@ header {
     margin-top: 20px;
     text-align: center;
     color: var(--color02);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 0px 5px;
 }
 
@@ -95,6 +100,8 @@ header {
     margin: 10px;
     text-decoration: underline;
     margin-bottom: 25px;
+    color: #c91515;
+    text-shadow: 1px 1px 1px black;
 }
 
 #card01 li, #card02 li, #card03 li {
@@ -116,7 +123,15 @@ header {
 }
 
 .botao:hover {
-    background-color: #636363;
+    background-color: #B71616;
+}
+
+#botao01 {
+    margin-top: 103px;
+}
+
+#botao03 {
+    margin-top: 38px;
 }
 
 #texto03 {
