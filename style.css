@@ -164,8 +164,8 @@ main {
     margin: auto;
 }
 #imagem-projeto {
-   width: 400px;
-   height: 300px;
+   width: 1000px;
+   height: 400px;
    background-color: var(--color01);
    margin: 20px;
    border-radius: 20px;
@@ -174,4 +174,25 @@ main {
 footer {
     background-color: #1e1e1e;
     height: 500px;
+}
+#kev, #raf, #guiz{
+    width: 290px;
+    height: 340px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 20px;
+}
+#pjt{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: fill;
+    height: 98%;
+    margin: 5px;
+    border-radius: 20px;
+}
+#kev, #raf, #guiz:hover{
+    opacity: 0.2;
+    scale: 0.9;
+    transition: 0.8s;
 }
