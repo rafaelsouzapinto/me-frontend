@@ -1,16 +1,18 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poetsen+One&display=swap');
 
 body {
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-padrao);
 }
 :root {
     --color01: #5B8C5A;
     --color02: #f3f3ef;
     --color03: #53687E;
     --color04: #3A4454;
-    --color05: #B24C63;
-    --color06: #2b323d;
+    --color05: #c5a610;
+
+    --font-titulo: "Poetsen One", sans-serif;
+    --font-padrao: "Barlow", Arial, Helvetica, sans-serif;
 }
 * {
     margin: 0px;
@@ -31,6 +33,11 @@ header {
 h1 {
     font-size: 24px;
     margin-bottom: 10px;
+    font-family: var(--font-titulo);
+    font-weight: lighter;
+}
+strong {
+    color: var(--color05);
 }
 
 nav {
@@ -52,7 +59,7 @@ nav a::after {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--color04);
+    background-color: var(--color05);
     transition: width 0.3s ease;
 }
 nav a:hover::after {
@@ -82,17 +89,19 @@ nav a:hover::after {
 #texto02 {
     border-radius: 0px 20px 0px 0px;
     padding-top: 20px;
-    background-image: linear-gradient(to right, #53687E, #537e6c);
+    background-image: linear-gradient(to right, #537e6cb7, #537e6c);
     width: 95%;
     font-size: 1.4em;
     text-align: center;
+    font-family: var(--font-titulo);
+    font-weight: lighter;
 }
 #planos {
     display: flex;
     width: 95%;
     height: 500px;
     justify-content: center;
-    background-image: linear-gradient(to right, #53687E, #537e6c);
+    background-image: linear-gradient(to right, #537e6cb7, #537e6c);
     border-radius: 0px 0px 20px 0px;
 
 }
@@ -159,7 +168,7 @@ button::before {
     top: 0;
     width: 0;
     height: 100%;
-    background-color: var(--color03);
+    background-color: #537e6cbd;
     transform: skewX(45deg);
     z-index: -1;
     transition: width 1000ms;
@@ -188,6 +197,8 @@ button:hover::before {
     margin: auto;
     padding: 50px 20px 0px 20px;
     font-size: 1.2em;
+    font-family: var(--font-titulo);
+    font-weight: lighter;
 }
 #quem-somos {
     display: flex;
@@ -233,6 +244,8 @@ button:hover::before {
     text-align: center;
     padding: 20px;
     font-size: 2em;
+    font-family: var(--font-titulo);
+    font-weight: lighter;
 }
 #imagem-projeto {
    width: 750px;
@@ -308,7 +321,7 @@ input[type="submit"]:hover {
 }
 input[type="submit"]:active {
     letter-spacing: 3px;
-    background-color:var(--color05);
+    background-color:var(--color01);
     color: hsl(0, 0%, 100%);
     box-shadow: var(--color05) 0px 0px 0px 0px;
     transform: translateY(10px);
@@ -349,10 +362,9 @@ p {
     gap: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
     margin: auto;
-  }
-  
-  /* for all social containers*/
-  .socialContainer {
+}
+
+.socialContainer {
     width: 52px;
     height: 52px;
     background-color: rgb(44, 44, 44);
@@ -361,46 +373,38 @@ p {
     justify-content: center;
     overflow: hidden;
     transition-duration: .3s;
-  }
-  /* instagram*/
-  .containerOne:hover {
+}
+.containerOne:hover {
     background-color: #d62976;
     transition-duration: .3s;
-  }
-  /* twitter*/
-  .containerTwo:hover {
+}
+.containerTwo:hover {
     background-color: #00acee;
     transition-duration: .3s;
-  }
-  /* linkdin*/
+}
   .containerThree:hover {
     background-color: #0072b1;
     transition-duration: .3s;
-  }
-  /* Whatsapp*/
-  .containerFour:hover {
+}
+.containerFour:hover {
     background-color: #128C7E;
     transition-duration: .3s;
-  }
+}
   
-  .socialContainer:active {
+.socialContainer:active {
     transform: scale(0.9);
     transition-duration: .3s;
-  }
-  
-  .socialSvg {
+}
+.socialSvg {
     width: 17px;
-  }
-  
-  .socialSvg path {
+}
+.socialSvg path {
     fill: rgb(255, 255, 255);
-  }
-  
-  .socialContainer:hover .socialSvg {
+}
+.socialContainer:hover .socialSvg {
     animation: slide-in-top 0.3s both;
-  }
-  
-  @keyframes slide-in-top {
+}
+@keyframes slide-in-top {
     0% {
       transform: translateY(-50px);
       opacity: 0;
@@ -410,5 +414,5 @@ p {
       transform: translateY(0);
       opacity: 1;
     }
-  }
+}
   
