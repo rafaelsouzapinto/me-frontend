@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poetsen+One&display=swap');
-
 body {
     height: 100vh;
     font-family: var(--font-padrao);
@@ -22,7 +21,7 @@ main {
     background-color: var(--color02);
 }
 
-
+/* cabeçalho */
 header {
     background-color: #fff;
     color: var(--color04);
@@ -39,7 +38,6 @@ h1 {
 strong {
     color: var(--color05);
 }
-
 nav {
     display: flex;
     justify-content: center;
@@ -66,6 +64,7 @@ nav a:hover::after {
     width: 100%;
 }
 
+/* introdução */
 #introducao {
     display: flex;
     width: 100%;
@@ -85,7 +84,15 @@ nav a:hover::after {
     border-radius: 10px;
 }
 
-
+/* Serviços e Planos */
+#planos {
+    display: flex;
+    width: 95%;
+    height: 500px;
+    justify-content: center;
+    background-image: linear-gradient(to right, #537e6cb7, #537e6c);
+    border-radius: 0px 0px 20px 0px;
+}
 #texto02 {
     border-radius: 0px 20px 0px 0px;
     padding-top: 20px;
@@ -96,15 +103,6 @@ nav a:hover::after {
     font-family: var(--font-titulo);
     font-weight: lighter;
     letter-spacing: 2px;
-}
-#planos {
-    display: flex;
-    width: 95%;
-    height: 500px;
-    justify-content: center;
-    background-image: linear-gradient(to right, #537e6cb7, #537e6c);
-    border-radius: 0px 0px 20px 0px;
-
 }
 #card01, #card02, #card03 {
     background: linear-gradient(to bottom, #425569, #3A4454);
@@ -118,12 +116,10 @@ nav a:hover::after {
     border-radius: 10px;
     padding: 0px 5px;
 }
-
 #card01 h2, #card02 h2, #card03 h2 {
     margin-top: 20px;
     font-size: 1.6em;
 }
-
 #card01 h1, #card02 h1, #card03 h1 {
     font-size: 2em;
     margin: 10px;
@@ -132,7 +128,6 @@ nav a:hover::after {
     color: #c91515;
     text-shadow: 1px 1px 1px black;
 }
-
 #card01 li, #card02 li, #card03 li {
     list-style-position: inside;
     font-size: 1.2em;
@@ -153,15 +148,13 @@ nav a:hover::after {
     position: relative;
     overflow: hidden;
     outline: 2px solid var(--color01);
-}
-  
+} 
 button:hover {
     color: #ffffff;
     transform: scale(1.1);
     outline: 2px solid var(--color01);
     box-shadow: 4px 5px 17px -4px var(--color01);
 }
-  
 button::before {
     content: "";
     position: absolute;
@@ -174,15 +167,12 @@ button::before {
     z-index: -1;
     transition: width 1000ms;
 }
-  
 button:hover::before {
     width: 250%;
 }
-
 #botao01 {
     margin-top: 89px;
 }
-
 #botao02 {
     margin-top: 38px;
 }
@@ -190,8 +180,12 @@ button:hover::before {
     margin-top: 38px;
 }
 
-
-
+/* Quem somos e portifólios*/
+#quem-somos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #texto03 {
     text-align: right;
     width: 900px;
@@ -201,15 +195,6 @@ button:hover::before {
     font-family: var(--font-titulo);
     font-weight: lighter;
     letter-spacing: 2px;
-}
-#quem-somos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.texto-imagem > h2 {
-    padding-bottom: 20px;
 }
 .block1 {
     position: relative;
@@ -233,6 +218,9 @@ button:hover::before {
     line-height: 1.3em;
     text-align: center;
 }
+.texto-imagem > h2 {
+    padding-bottom: 20px;
+}
 .block1:hover img {
     filter: brightness(0.3);
 }
@@ -240,7 +228,7 @@ button:hover::before {
     opacity: 1;
 }
 
-
+/* Exemplo de projeto */
 #projeto {
     width: 1000px;
     margin: auto;
@@ -279,7 +267,7 @@ button:hover::before {
     border-radius: 20px;
 }
 
-
+/* rodapé */
 footer {
     background-color: #1e1e1e;
     height: 560px;
