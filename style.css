@@ -155,7 +155,6 @@ main {
     border-radius: 20px;
 }
 
-
 #projeto {
     display: flex;
     align-items: center;
@@ -169,11 +168,6 @@ main {
    background-color: var(--color01);
    margin: 20px;
    border-radius: 20px;
-}
-
-footer {
-    background-color: #1e1e1e;
-    height: 500px;
 }
 #kev, #raf, #guiz{
     width: 290px;
@@ -196,3 +190,157 @@ footer {
     scale: 0.9;
     transition: 0.8s;
 }
+
+
+footer {
+    background-color: #1e1e1e;
+    height: 560px;
+}
+#contato1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    height: 350px;
+    flex-wrap: wrap;
+}
+form {
+    display: block;
+    width: 300px;
+    padding: 20px 45px 11px 20px;
+    background-color: #2b323d;
+    border-radius: 10px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+input[type="submit"]:hover {
+    letter-spacing: 3px;
+    background-color:var(--color03);
+    color: hsl(0, 0%, 100%);
+    box-shadow: var(--color03) 0px 7px 29px 0px;
+}
+input[type="submit"]:active {
+    letter-spacing: 3px;
+    background-color:var(--color05);
+    color: hsl(0, 0%, 100%);
+    box-shadow: var(--color05) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+#text-contato1 {
+    color: var(--color02);
+    display: block;
+    width: 300px;
+}
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 1.2em;
+}
+
+#contato2 {
+    height: 150px;
+    border-top: 1px solid white;
+    width: 800px;
+    margin: auto;
+}
+
+#contato2 > h1 {
+    padding-top: 10px;
+    color: var(--color02);
+    text-align: center;
+}
+.card {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    margin: auto;
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
