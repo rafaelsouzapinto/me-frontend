@@ -10,6 +10,7 @@ body {
     --color03: #53687E;
     --color04: #3A4454;
     --color05: #B24C63;
+    --color06: #2b323d;
 }
 * {
     margin: 0px;
@@ -61,7 +62,7 @@ nav a:hover::after {
 #introducao {
     display: flex;
     width: 100%;
-    height: 45vh;
+    height: 500px;
     margin: 0px 0px 10px 0px;
     align-items: center;
     justify-content: center;
@@ -78,6 +79,14 @@ nav a:hover::after {
 }
 
 
+#texto02 {
+    border-radius: 0px 20px 0px 0px;
+    padding-top: 20px;
+    background-image: linear-gradient(to right, #53687E, #537e6c);
+    width: 95%;
+    font-size: 1.4em;
+    text-align: center;
+}
 #planos {
     display: flex;
     width: 95%;
@@ -87,18 +96,10 @@ nav a:hover::after {
     border-radius: 0px 0px 20px 0px;
 
 }
-#texto02 {
-    border-radius: 0px 20px 0px 0px;
-    padding-top: 20px;
-    background-image: linear-gradient(to right, #53687E, #537e6c);
-    width: 95%;
-    font-size: 1.2em;
-    text-align: center;
-}
 #card01, #card02, #card03 {
     background: linear-gradient(to bottom, #425569, #3A4454);
     width: 300px;
-    height: 450px;
+    height: 400px;
     display: inline-block;
     margin: 20px;
     margin-top: 20px;
@@ -110,11 +111,11 @@ nav a:hover::after {
 
 #card01 h2, #card02 h2, #card03 h2 {
     margin-top: 20px;
-    font-size: 2.0em;
+    font-size: 1.6em;
 }
 
 #card01 h1, #card02 h1, #card03 h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 10px;
     text-decoration: underline;
     margin-bottom: 25px;
@@ -124,68 +125,122 @@ nav a:hover::after {
 
 #card01 li, #card02 li, #card03 li {
     list-style-position: inside;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 10px;
     text-align:start;
 }
-.botao {
-    background-color: #1e1e1e;
-    width: 100px;
-    padding: 5px;
-    margin: auto;
+.button {
+    padding: 1em 2em;
+    border: none;
     border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--color01);
+    transition: all 500ms;
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid var(--color01);
 }
-.botao > a {
-    text-decoration: none;
-    color: var(--color02);
+  
+button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid var(--color01);
+    box-shadow: 4px 5px 17px -4px var(--color01);
 }
-
-.botao:hover {
-    background-color: #B71616;
+  
+button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color03);
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+  
+button:hover::before {
+    width: 250%;
 }
 
 #botao01 {
-    margin-top: 103px;
+    margin-top: 89px;
 }
 
+#botao02 {
+    margin-top: 38px;
+}
 #botao03 {
     margin-top: 38px;
 }
+
+
 
 #texto03 {
     text-align: right;
     width: 900px;
     margin: auto;
-    padding: 20px 20px 0px 20px;
+    padding: 50px 20px 0px 20px;
+    font-size: 1.2em;
 }
 #quem-somos {
-    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
-#kevo, #rafa, #gui {
-    background-color:var(--color05);
-    width: 300px;
-    height: 350px;
-    display: inline-block;
-    margin: 20px;
-    border-radius: 20px;
+.block1 {
+    position: relative;
+}
+.block1 img {
+    width: 90%;
+    transition: filter 0.3s ease;
+    border-radius: 10px;
+    border: 3px solid #5b8c5a62;
+}
+.block1 .texto-imagem {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    line-height: 1.3em;
+    text-align: center;
+}
+.block1:hover img {
+    filter: brightness(0.3);
+}
+.block1:hover .texto-imagem {
+    opacity: 1;
 }
 
+
 #projeto {
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
     width: 1000px;
     margin: auto;
+    height: 500px;
+}
+#projeto > h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
 }
 #imagem-projeto {
-   width: 1000px;
-   height: 400px;
-   background-color: var(--color01);
-   margin: 20px;
-   border-radius: 20px;
+   width: 750px;
+   height: 360px;
+   margin: auto;
+}
+#imagem-projeto > img {
+    border: 5px solid #5b8c5a6c;
 }
 #kev, #raf, #guiz{
     width: 290px;
@@ -202,11 +257,6 @@ nav a:hover::after {
     height: 98%;
     margin: 5px;
     border-radius: 20px;
-}
-#kev, #raf, #guiz:hover{
-    opacity: 0.2;
-    scale: 0.9;
-    transition: 0.8s;
 }
 
 
@@ -240,7 +290,7 @@ textarea {
 }
 input[type="submit"] {
     padding: 17px 40px;
-    border-radius: 50px;
+    border-radius: 5px;
     cursor: pointer;
     border: 0;
     background-color: white;
