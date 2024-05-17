@@ -1,0 +1,233 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --color1: #E8F0FF;
+    --color2: #1b3c72;
+    --color3: #087F8C;
+    --color4: #009FB7; 
+    --color5: #030027;
+
+    --fonte-padrao: 'Montserrat', sans-serif;
+    --fonte-titulo: 'Ubuntu', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--color1);
+    font-family: var(--fonte-padrao);
+}
+
+/* cabeçalho*/
+header {
+    text-align: center;
+}
+.container1 {
+    height: 200px;
+    font-family: var(--fonte-titulo);
+    font-style: italic;
+    color: var(--color1);
+    font-weight: 100;
+    background-image: linear-gradient(to bottom, var(--color5), var(--color2));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#foto {
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: inline;
+}
+#foto > img {
+    border-radius: 50% ;
+}
+.container1 > h1 {
+    padding: 20px;
+}
+nav {
+    background-color:var(--color2);
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+nav > a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--color1);
+    font-weight: bold;
+}
+nav > a:hover {
+    background-color: #d1d1d159;
+    border-radius: 5px;
+}
+
+
+/* Sobre mim */
+
+#container2 {
+    height: 400px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#topicos {
+    text-align: center;
+    max-width: 600px;
+    min-width: 350px;
+}
+.item {
+    padding: 0px 20px 10px 20px;
+    display: inline-block;
+    font-size: 1.1em;
+    width: 250px;
+}
+#texto-sobre {
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.1em;
+    max-width: 700px;
+    min-width: 320px;
+}
+#texto-sobre > h1 {
+    font-size: 1.5em;
+    text-indent: 20px;
+    padding: 5px;
+}
+
+
+
+/* Projetos */
+.container3 {
+    background: linear-gradient(var(--color5), var(--color2));
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#titulo-projeto {
+    background: linear-gradient(var(--color5), var(--color2));
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+    padding: 20px;
+    color: var(--color1);
+    font-size: 1.8em;
+}
+
+#projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+}
+
+.block1 {
+    position: relative;
+    padding: 0px 20px 20px 20px;
+    border-radius: 10px;
+}
+.block1 img {
+    width: 90%;
+    transition: filter 0.3s ease;
+    border-radius: 10px;
+}
+
+.block1 .texto-imagem {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+.block1:hover img {
+    filter: brightness(0.1);
+}
+
+.block1:hover .texto-imagem {
+    opacity: 1;
+}
+
+
+/* Habilidades */
+#titulo-habilidades {
+    background-color: var(--color1);
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+}
+.container4 {
+    text-align: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#habilidades {
+    display: flex;
+}
+.block2 {
+    width: 300px;
+    height: 300px;
+    background-color: aliceblue;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #03002741;
+    padding: 10px;
+}
+ul {
+    list-style-position: inside;
+    list-style-type: square;
+    text-align: left;
+}
+li {
+    padding: 5px;
+}
+
+
+/* footer */
+footer {
+    height: 400px;
+    background-color: #1E1E1E;
+}
+#sociais {
+    text-align: center;
+    border-bottom: 1px solid white ;
+    margin: 0px 50px;
+}
+#sociais > h1 {
+    color: white;
+    padding: 20px 20px 5px 20px;
+}
+#sociais > p {
+    color: #727272;
+    padding: 0px 0px 0px 20px;
+}
+.rede-social {
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+}
