@@ -95,6 +95,7 @@ nav a:hover::after {
     text-align: center;
     font-family: var(--font-titulo);
     font-weight: lighter;
+    letter-spacing: 2px;
 }
 #planos {
     display: flex;
@@ -199,6 +200,7 @@ button:hover::before {
     font-size: 1.2em;
     font-family: var(--font-titulo);
     font-weight: lighter;
+    letter-spacing: 2px;
 }
 #quem-somos {
     display: flex;
@@ -246,6 +248,7 @@ button:hover::before {
     font-size: 2em;
     font-family: var(--font-titulo);
     font-weight: lighter;
+    letter-spacing: 2px;
 }
 #imagem-projeto {
    width: 750px;
